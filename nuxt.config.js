@@ -52,5 +52,11 @@ export default {
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    publicPath: '/nuxt/',
+    /*
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {},
+  },
 }

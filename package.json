@@ -10,7 +10,8 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "test": "jest"
+    "test": "jest",
+    "android" : "yarn build && yarn generate && npx cap copy && npx cap open android"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
@@ -23,6 +24,9 @@
     }
   },
   "dependencies": {
+    "@capacitor/android": "2.4.2",
+    "@capacitor/cli": "^2.4.2",
+    "@capacitor/core": "^2.4.2",
     "@nuxt/content": "^1.9.0",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/pwa": "^3.0.2",
