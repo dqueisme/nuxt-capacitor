@@ -18,3 +18,8 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+# create capacitor apps android
+npx cap add android
+# create capacitor apps electron
+npx cap add @capacitor-community/electron
