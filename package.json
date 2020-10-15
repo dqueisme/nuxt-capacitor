@@ -11,19 +11,15 @@
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
     "test": "jest",
-    "android" : "yarn build && yarn generate && npx cap copy && npx cap open android"
+    "android": "yarn build && yarn generate && npx cap copy && npx cap open android",
+    "electron": "yarn build && yarn generate && npx cap copy && npx cap open @capacitor-community/electron"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
     "*.{css,vue}": "stylelint"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
+    "@capacitor-community/electron": "^1.2.3",
     "@capacitor/android": "2.4.2",
     "@capacitor/cli": "^2.4.2",
     "@capacitor/core": "^2.4.2",
