@@ -51,6 +51,11 @@ export default {
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
 
+  // StoryBook options (https://storybook.nuxtjs.org/)
+  storybook: {
+    // Options
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     publicPath: '/nuxt/',
